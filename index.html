@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="es-CO" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La comunicación también se juega en equipo · Trabajo final de Comunicaciones</title>
+  <meta name="description" content="Trabajo final de la competencia de Comunicación del Tecnólogo en Análisis y Desarrollo de Software (SENA, ficha 3406211): introducción, temática, reflexión del reto, evidencias, integrantes y reflexiones.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#E4EAF4">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="La comunicación también se juega en equipo">
+  <meta property="og:description" content="Trabajo final de Comunicaciones · Tecnólogo en Análisis y Desarrollo de Software · SENA, ficha 3406211.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fuentes/bagel-fat-one-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fuentes/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <p class="sr" aria-live="polite" data-aviso></p>
+
+  <!-- Mini tablero: acompaña la lectura y marca las casillas ya leídas -->
+  <nav class="mini" aria-label="Avance por las casillas" data-mini>
+    <a class="mini__inicio" href="#inicio">Trabajo final · Comunicaciones</a>
+    <ol class="mini__camino">
+      <li><a class="mini__casilla" href="#introduccion" data-destino="introduccion"><span class="dado" data-cara="1" aria-hidden="true"><i></i></span><span class="mini__nombre">Introducción</span></a></li>
+      <li><a class="mini__casilla" href="#tematica" data-destino="tematica"><span class="dado" data-cara="2" aria-hidden="true"><i></i><i></i></span><span class="mini__nombre">Temática</span></a></li>
+      <li><a class="mini__casilla" href="#reto" data-destino="reto"><span class="dado" data-cara="3" aria-hidden="true"><i></i><i></i><i></i></span><span class="mini__nombre">Reto</span></a></li>
+      <li><a class="mini__casilla" href="#evidencias" data-destino="evidencias"><span class="dado" data-cara="4" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="mini__nombre">Evidencias</span></a></li>
+      <li><a class="mini__casilla" href="#integrantes" data-destino="integrantes"><span class="dado" data-cara="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="mini__nombre">Integrantes</span></a></li>
+      <li><a class="mini__casilla" href="#reflexiones" data-destino="reflexiones"><span class="dado" data-cara="6" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="mini__nombre">Reflexiones</span></a></li>
+      <li><a class="mini__casilla mini__casilla--meta" href="#meta" data-destino="meta"><span class="mini__cielo" aria-hidden="true"></span><span class="mini__nombre">Meta</span></a></li>
+    </ol>
+    <span class="mini__lector" aria-hidden="true" data-lector></span>
+  </nav>
+
+  <header class="portada" id="inicio">
+    <div class="contenedor portada__rejilla">
+      <div class="portada__texto">
+        <h1>La comunicación también se juega en equipo</h1>
+        <p class="portada__lead">Trabajo final de la competencia de Comunicación del Tecnólogo en Análisis y Desarrollo de Software, SENA, ficha 3406211. Somos cuatro aprendices, cuatro fichas en el tablero, y cada punto de la actividad es una casilla del camino.</p>
+
+        <div class="selector" role="group" aria-labelledby="selector-titulo">
+          <p class="selector__titulo" id="selector-titulo">Elige una ficha y lo de ese integrante se resalta en toda la página.</p>
+          <div class="selector__fichas">
+            <button class="ficha" type="button" data-ficha="matias" aria-pressed="false"><span class="ficha__disco" aria-hidden="true">MA</span><span class="ficha__nombre">Matías</span></button>
+            <button class="ficha" type="button" data-ficha="rafael" aria-pressed="false"><span class="ficha__disco" aria-hidden="true">RG</span><span class="ficha__nombre">Rafael</span></button>
+            <button class="ficha" type="button" data-ficha="simon" aria-pressed="false"><span class="ficha__disco" aria-hidden="true">SC</span><span class="ficha__nombre">Simón</span></button>
+            <button class="ficha" type="button" data-ficha="tomas" aria-pressed="false"><span class="ficha__disco" aria-hidden="true">TC</span><span class="ficha__nombre">Tomás</span></button>
+          </div>
+          <button class="selector__todos" type="button" data-ficha="todos">Ver a los cuatro por igual</button>
+        </div>
+      </div>
+
+      <nav class="tablero" aria-label="Tablero: las seis casillas de la actividad">
+        <a class="tablero__casilla tablero__casilla--1" href="#introduccion" data-destino="introduccion">
+          <span class="dado" data-cara="1" aria-hidden="true"><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 1: </span>Introducción</span>
+          <span class="tablero__idea">Qué es comunicar</span>
+        </a>
+        <a class="tablero__casilla tablero__casilla--2" href="#tematica" data-destino="tematica">
+          <span class="dado" data-cara="2" aria-hidden="true"><i></i><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 2: </span>Temática</span>
+          <span class="tablero__idea">Lo que vimos</span>
+        </a>
+        <a class="tablero__casilla tablero__casilla--3" href="#reto" data-destino="reto">
+          <span class="dado" data-cara="3" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 3: </span>Reto</span>
+          <span class="tablero__idea">Tipos de comunicación</span>
+        </a>
+        <a class="tablero__casilla tablero__casilla--4" href="#evidencias" data-destino="evidencias">
+          <span class="dado" data-cara="4" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 4: </span>Evidencias</span>
+          <span class="tablero__idea">Los trabajos</span>
+        </a>
+        <a class="tablero__casilla tablero__casilla--5" href="#integrantes" data-destino="integrantes">
+          <span class="dado" data-cara="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 5: </span>Integrantes</span>
+          <span class="tablero__idea">Quiénes somos</span>
+        </a>
+        <a class="tablero__casilla tablero__casilla--6" href="#reflexiones" data-destino="reflexiones">
+          <span class="dado" data-cara="6" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="tablero__nombre"><span class="sr">Casilla 6: </span>Reflexiones</span>
+          <span class="tablero__idea">Lo aprendido</span>
+        </a>
+        <a class="tablero__cielo" href="#meta" data-destino="meta">
+          <span class="tablero__meta">Meta</span>
+          <span class="tablero__idea">Lo que nos llevamos</span>
+        </a>
+        <a class="tablero__casa tablero__casa--matias resalta" data-integrante="matias" href="#casa-matias">
+          <span class="disco" aria-hidden="true">MA</span>
+          <span class="tablero__jugador"><span class="sr">Casa de </span>Matías</span>
+        </a>
+        <a class="tablero__casa tablero__casa--rafael resalta" data-integrante="rafael" href="#casa-rafael">
+          <span class="disco" aria-hidden="true">RG</span>
+          <span class="tablero__jugador"><span class="sr">Casa de </span>Rafael</span>
+        </a>
+        <a class="tablero__casa tablero__casa--simon resalta" data-integrante="simon" href="#casa-simon">
+          <span class="disco" aria-hidden="true">SC</span>
+          <span class="tablero__jugador"><span class="sr">Casa de </span>Simón</span>
+        </a>
+        <a class="tablero__casa tablero__casa--tomas resalta" data-integrante="tomas" href="#casa-tomas">
+          <span class="disco" aria-hidden="true">TC</span>
+          <span class="tablero__jugador"><span class="sr">Casa de </span>Tomás</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ CASILLA 1 · INTRODUCCIÓN ============ -->
+    <section class="seccion" id="introduccion" data-casilla aria-labelledby="t-introduccion">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="1" aria-hidden="true"><i></i></span>
+          <h2 id="t-introduccion"><span class="sr">Casilla 1. </span>Introducción: qué es la comunicación y por qué importa</h2>
+        </div>
+        <p class="consigna">Comunicar es poner algo en común, y solo se logra cuando el otro entiende.</p>
+
+        <div class="intro">
+          <div class="prosa">
+            <p>Para nosotros, comunicarse es mucho más que hablar. Es lograr que una idea salga de una persona, viaje por un canal y llegue a otra que la entiende y responde. Si ese último paso no ocurre, hubo ruido, pero no hubo comunicación.</p>
+            <p>Por eso nos importa tanto. En la casa, en el SENA y en cualquier trabajo, un malentendido cuesta tiempo, genera roces y obliga a repetir lo que ya estaba hecho. Cuando decimos las cosas claras y con respeto, el equipo avanza y la confianza crece.</p>
+            <p>Como futuros tecnólogos en Análisis y Desarrollo de Software lo tenemos presente: un requisito mal entendido termina convertido en código que nadie pidió. La comunicación no es un tema aparte de la programación; es parte del oficio.</p>
+          </div>
+
+          <div class="proceso-bloque">
+            <h3>El viaje de un mensaje</h3>
+            <ol class="proceso">
+              <li class="proceso__paso barro"><span class="proceso__nombre">Emisor</span><span class="proceso__texto">Quien tiene la idea: un cliente que necesita una aplicación.</span></li>
+              <li class="proceso__paso barro"><span class="proceso__nombre">Código</span><span class="proceso__texto">Las palabras y señales que los dos entienden.</span></li>
+              <li class="proceso__paso barro"><span class="proceso__nombre">Mensaje</span><span class="proceso__texto">Lo que quiere decir: «necesito ver mis ventas del mes».</span></li>
+              <li class="proceso__paso barro"><span class="proceso__nombre">Canal</span><span class="proceso__texto">Por dónde viaja: una reunión, un correo o un chat.</span></li>
+              <li class="proceso__paso barro"><span class="proceso__nombre">Receptor</span><span class="proceso__texto">Quien lo recibe e interpreta: el equipo de desarrollo.</span></li>
+            </ol>
+            <p class="proceso__contexto">Todo ocurre dentro de un <strong>contexto</strong>, y se completa con la <strong>retroalimentación</strong>: la respuesta que confirma que el mensaje se entendió.</p>
+          </div>
+        </div>
+
+        <div class="oficio-bloque">
+          <h3>Donde más pesa en nuestro oficio</h3>
+          <ul class="oficio">
+            <li><strong>Requisitos claros.</strong> Todo el equipo entiende lo mismo y se evitan errores y retrabajos.</li>
+            <li><strong>Colaboración.</strong> Cada quien propone sus ideas con respeto y se siente cómodo aportando.</li>
+            <li><strong>Conflictos.</strong> Los desacuerdos se resuelven con soluciones que sirven a todos.</li>
+            <li><strong>Retroalimentación.</strong> Dar y recibir observaciones nos ayuda a aprender y a mejorar el producto.</li>
+            <li><strong>Clientes.</strong> Escuchar sus necesidades permite manejar sus expectativas.</li>
+            <li><strong>Plazos y recursos.</strong> Se negocian tiempos de entrega realistas con clientes y jefes.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASILLA 2 · TEMÁTICA ============ -->
+    <section class="seccion" id="tematica" data-casilla aria-labelledby="t-tematica">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="2" aria-hidden="true"><i></i><i></i></span>
+          <h2 id="t-tematica"><span class="sr">Casilla 2. </span>Temática vista en la formación</h2>
+        </div>
+        <p class="consigna">Un trimestre, tres trabajos y un mismo hilo: hacernos entender.</p>
+
+        <div class="prosa">
+          <p>La competencia «Desarrollar procesos de comunicación eficaces y efectivos, teniendo en cuenta situaciones de orden social, personal y productivo» se organizó en dos temas: introducción a la comunicación y comunicación asertiva. Desde el acta del plan de trabajo acordamos que el respeto sería la base, y que la argumentación y la puntualidad pesarían en cada entrega.</p>
+        </div>
+
+        <ol class="recorrido">
+          <li class="parada barro">
+            <span class="parada__fecha">30 jul</span>
+            <span class="parada__tema">Introducción a la comunicación</span>
+            <span class="parada__titulo">Taller tipos de comunicación</span>
+            <span class="parada__texto">Los estilos pasivo, agresivo, pasivo-agresivo y asertivo en la vida diaria. En este tema también estuvo el cuento «La sapa caramelo».</span>
+          </li>
+          <li class="parada barro">
+            <span class="parada__fecha">20 ago</span>
+            <span class="parada__tema">Comunicación asertiva</span>
+            <span class="parada__titulo">Presentación funciones del lenguaje</span>
+            <span class="parada__texto">Las seis funciones y el elemento de la comunicación en el que se centra cada una.</span>
+          </li>
+          <li class="parada barro">
+            <span class="parada__fecha">3 sept</span>
+            <span class="parada__tema">Comunicación asertiva</span>
+            <span class="parada__titulo">Investigación comunicación no verbal</span>
+            <span class="parada__texto">Nueve temas del entorno social, investigados en equipo y analizados en escenas de la película «El abuelo».</span>
+          </li>
+          <li class="parada barro">
+            <span class="parada__fecha">24 sept</span>
+            <span class="parada__tema">Trabajo final</span>
+            <span class="parada__titulo">Esta página web</span>
+            <span class="parada__texto">La partida completa, casilla por casilla.</span>
+          </li>
+        </ol>
+
+        <div class="subtema">
+          <h3>Las seis funciones del lenguaje</h3>
+          <p class="subtema__nota">Cada función se define por el elemento de la comunicación en el que se centra. Las fichas marcan la función que presentó cada integrante.</p>
+          <ul class="funciones">
+            <li class="funcion barro">
+              <span class="funcion__centro">Emisor</span>
+              <span class="funcion__nombre">Expresiva o emotiva</span>
+              <span class="funcion__texto">Expresa sentimientos, emociones y estados de ánimo.</span>
+              <span class="funcion__ejemplo">«¡Qué alegría que por fin funcionó!»</span>
+            </li>
+            <li class="funcion barro resalta" data-integrante="tomas">
+              <span class="funcion__centro">Receptor</span>
+              <span class="funcion__nombre">Apelativa o conativa</span>
+              <span class="funcion__texto">Busca que el otro haga algo: pide, ordena o pregunta.</span>
+              <span class="funcion__ejemplo">«Por favor, envíame el archivo antes de las cinco».</span>
+              <span class="funcion__ficha"><span class="disco disco--mini" aria-hidden="true">TC</span>La presentó Tomás</span>
+            </li>
+            <li class="funcion barro resalta" data-integrante="rafael">
+              <span class="funcion__centro">Contexto</span>
+              <span class="funcion__nombre">Referencial o representativa</span>
+              <span class="funcion__texto">Informa datos objetivos sobre la realidad.</span>
+              <span class="funcion__ejemplo">«La entrega es el 24 de septiembre a las 4:00 p. m.»</span>
+              <span class="funcion__ficha"><span class="disco disco--mini" aria-hidden="true">RG</span>La presentó Rafael</span>
+            </li>
+            <li class="funcion barro resalta" data-integrante="matias">
+              <span class="funcion__centro">Canal</span>
+              <span class="funcion__nombre">Fática o de contacto</span>
+              <span class="funcion__texto">Abre, mantiene o cierra la comunicación sin aportar información nueva.</span>
+              <span class="funcion__ejemplo">«¿Aló?», «ajá», «chao».</span>
+              <span class="funcion__ficha"><span class="disco disco--mini" aria-hidden="true">MA</span>La presentó Matías</span>
+            </li>
+            <li class="funcion barro resalta" data-integrante="simon">
+              <span class="funcion__centro">Código</span>
+              <span class="funcion__nombre">Metalingüística</span>
+              <span class="funcion__texto">Usa el lenguaje para explicar el propio lenguaje.</span>
+              <span class="funcion__ejemplo">«“Asertivo” quiere decir…»</span>
+              <span class="funcion__ficha"><span class="disco disco--mini" aria-hidden="true">SC</span>La presentó Simón</span>
+            </li>
+            <li class="funcion barro">
+              <span class="funcion__centro">Mensaje</span>
+              <span class="funcion__nombre">Poética o estética</span>
+              <span class="funcion__texto">Cuida la forma y la belleza de lo que se dice.</span>
+              <span class="funcion__ejemplo">Refranes, poemas y eslóganes.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="subtema">
+          <h3>Comunicación no verbal desde el entorno social</h3>
+          <p class="subtema__nota">Los nueve temas de la investigación. Las fichas marcan el tema de cada integrante.</p>
+          <ul class="noverbal">
+            <li class="nv barro"><span class="nv__nombre">Kinesis</span><span class="nv__texto">Los movimientos y posturas del cuerpo.</span></li>
+            <li class="nv barro"><span class="nv__nombre">Microexpresiones</span><span class="nv__texto">Gestos de la cara que duran una fracción de segundo.</span></li>
+            <li class="nv barro resalta" data-integrante="tomas"><span class="nv__nombre">Proxemia</span><span class="nv__texto">El uso de las distancias entre las personas.</span><span class="nv__ficha"><span class="disco disco--mini" aria-hidden="true">TC</span>Tomás</span></li>
+            <li class="nv barro resalta" data-integrante="simon"><span class="nv__nombre">Paralenguaje</span><span class="nv__texto">El tono, el volumen, el ritmo y los silencios de la voz.</span><span class="nv__ficha"><span class="disco disco--mini" aria-hidden="true">SC</span>Simón</span></li>
+            <li class="nv barro"><span class="nv__nombre">Emblemas</span><span class="nv__texto">Gestos con significado propio, como el pulgar arriba.</span></li>
+            <li class="nv barro"><span class="nv__nombre">Ademanes</span><span class="nv__texto">Movimientos de las manos que acompañan lo que se dice.</span></li>
+            <li class="nv barro"><span class="nv__nombre">Vestimenta</span><span class="nv__texto">Lo que la ropa y la apariencia comunican.</span></li>
+            <li class="nv barro resalta" data-integrante="rafael"><span class="nv__nombre">Protocolo</span><span class="nv__texto">Las normas de cortesía y orden en los encuentros formales.</span><span class="nv__ficha"><span class="disco disco--mini" aria-hidden="true">RG</span>Rafael</span></li>
+            <li class="nv barro resalta" data-integrante="matias"><span class="nv__nombre">Saludo</span><span class="nv__texto">El ritual que abre el encuentro y define la relación.</span><span class="nv__ficha"><span class="disco disco--mini" aria-hidden="true">MA</span>Matías</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASILLA 3 · RETO ============ -->
+    <section class="seccion" id="reto" data-casilla aria-labelledby="t-reto">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="3" aria-hidden="true"><i></i><i></i><i></i></span>
+          <h2 id="t-reto"><span class="sr">Casilla 3. </span>Reflexión del reto: tipos de comunicación</h2>
+        </div>
+        <p class="consigna">Ni dejarse pisar ni pisar a nadie.</p>
+
+        <div class="prosa">
+          <p>El reto del taller fue reconocer los tipos de comunicación que usamos a diario, diferenciar la comunicación agresiva de la pasiva, llevar la pasiva-agresiva a un ejemplo propio, describir la asertiva e identificar cada estilo en escenas de películas animadas.</p>
+        </div>
+
+        <div class="estilos">
+          <div class="estilo estilo--pasivo barro">
+            <h3 class="estilo__nombre">Pasivo</h3>
+            <p>Respeta los derechos de los demás, pero no los propios: no reclama, no pone límites y acumula frustración.</p>
+          </div>
+          <div class="estilo estilo--asertivo barro">
+            <h3 class="estilo__nombre">Asertivo</h3>
+            <p>Dice lo que piensa y siente, de frente y con respeto. Busca acuerdos donde todos ganen.</p>
+          </div>
+          <div class="estilo estilo--agresivo barro">
+            <h3 class="estilo__nombre">Agresivo</h3>
+            <p>Defiende lo suyo pasando por encima de los demás: impone, exige y sube el tono.</p>
+          </div>
+          <div class="estilo estilo--mixto barro">
+            <h3 class="estilo__nombre">Pasivo-agresivo</h3>
+            <p>Parece que cede, pero ataca por lo bajo: indirectas y sarcasmo en lugar de un reclamo directo.</p>
+          </div>
+          <p class="estilos__resumen">«En resumen, el agresivo se impone y el pasivo se anula».</p>
+        </div>
+
+        <div class="jugadas">
+          <div class="conversacion conversacion--mala">
+            <h3>Así sonó la jugada pasivo-agresiva</h3>
+            <p class="conversacion__contexto">En un trabajo en grupo del SENA, un compañero no entrega su parte y toca hacerla a última hora.</p>
+            <p class="burbuja hundido">«No, tranquilo, ya está listo… igual siempre me toca a mí».</p>
+            <p class="burbuja hundido"><span class="burbuja__canal">En el grupo de WhatsApp:</span> «Qué rico cuando el trabajo en equipo lo hace uno solo».</p>
+            <p class="conversacion__resultado">No hay un reclamo directo: nadie aclara nada y el problema se repite.</p>
+          </div>
+          <div class="conversacion conversacion--buena">
+            <h3>Así la jugaríamos de forma asertiva</h3>
+            <p class="conversacion__contexto">La misma situación, dicha de frente y en privado.</p>
+            <p class="burbuja barro">«Me tocó terminar tu parte a última hora y me sentí cargado. Para la próxima entrega, ¿acordamos fechas por parte y avisamos a tiempo si alguien no alcanza?».</p>
+            <p class="conversacion__resultado">Se nombra el problema, se habla desde lo que uno siente y se propone un acuerdo.</p>
+          </div>
+        </div>
+
+        <div class="escenas-bloque">
+          <h3>Lo que identificamos en el video</h3>
+          <table class="escenas">
+            <caption class="sr">Estilo de comunicación identificado en cada escena del video</caption>
+            <thead>
+              <tr><th scope="col">Personaje</th><th scope="col">Película</th><th scope="col">Estilo</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Señor Huph</th><td>Los Increíbles</td><td><span class="etiqueta etiqueta--agresivo">Agresivo</span></td></tr>
+              <tr><th scope="row">Mavis</th><td>Hotel Transylvania 2</td><td><span class="etiqueta etiqueta--asertivo">Asertivo</span></td></tr>
+              <tr><th scope="row">Señora Cara de Papa</th><td>Toy Story</td><td><span class="etiqueta etiqueta--agresivo">Agresivo</span></td></tr>
+              <tr><th scope="row">Linguini</th><td>Ratatouille</td><td><span class="etiqueta etiqueta--pasivo">Pasivo</span></td></tr>
+              <tr><th scope="row">Chef Skinner</th><td>Ratatouille</td><td><span class="etiqueta etiqueta--agresivo">Agresivo</span></td></tr>
+              <tr><th scope="row">Colette</th><td>Ratatouille</td><td><span class="etiqueta etiqueta--asertivo">Asertivo</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="reflexion-reto">
+          <h3>Nuestra reflexión</h3>
+          <div class="prosa">
+            <p>El reto nos puso frente a un espejo. Todos hemos sido pasivos para no buscar problemas, agresivos cuando estamos cansados o de afán, y pasivo-agresivos en el grupo de WhatsApp. Ver los estilos en personajes animados hizo fácil reconocerlos; lo difícil fue aceptar que también son nuestros.</p>
+            <p>Entendimos que la asertividad no es una forma de ser con la que se nace, sino una habilidad que se practica: hablar desde lo que uno siente («yo siento que…») en vez de culpar («es que tú siempre…»), decir «no» sin culpa y buscar soluciones en lugar de ganar una pelea.</p>
+            <p>En un equipo de software se nota enseguida. El pasivo no avisa que está bloqueado, el agresivo impone su solución sin escuchar y el pasivo-agresivo deja indirectas en los comentarios. El asertivo levanta la mano a tiempo, explica el problema y propone cómo seguir. Ese es el compañero que queremos ser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASILLA 4 · EVIDENCIAS ============ -->
+    <section class="seccion" id="evidencias" data-casilla aria-labelledby="t-evidencias">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="4" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <h2 id="t-evidencias"><span class="sr">Casilla 4. </span>Evidencias de los trabajos de cada integrante</h2>
+        </div>
+        <p class="consigna">Cada ficha llegó con sus propias jugadas.</p>
+        <div class="prosa">
+          <p>Los cuatro hicimos los tres trabajos evaluados del trimestre, cada uno con su propio tema asignado.</p>
+        </div>
+
+        <div class="evidencias">
+          <!-- MATÍAS -->
+          <div class="jugador" role="group" aria-labelledby="ev-matias">
+            <div class="jugador__casa barro resalta" data-integrante="matias">
+              <button class="ficha ficha--sola" type="button" data-ficha="matias" aria-pressed="false" aria-label="Resaltar a Matías en toda la página"><span class="ficha__disco" aria-hidden="true">MA</span></button>
+              <h3 id="ev-matias">Matías</h3>
+            </div>
+            <article class="jugada barro resalta" data-integrante="matias">
+              <h4>Taller tipos de comunicación</h4>
+              <p class="jugada__tema">«Taller de comunicación asertiva», en pareja con Santiago Caro</p>
+              <p>Identificó los cuatro estilos, explicó que «el agresivo se impone y el pasivo se anula», propuso un ejemplo pasivo-agresivo de un trabajo en grupo del SENA, describió diez rasgos de la comunicación asertiva y clasificó seis escenas de películas animadas.</p>
+              <p class="jugada__enlaces"><a class="enlace-archivo" href="https://drive.google.com/file/d/1PcUG_gzLCLxQjMN6LzY6q0i-yyADC9HI/view" target="_blank" rel="noopener">Abrir el taller<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="matias">
+              <h4>Presentación funciones del lenguaje</h4>
+              <p class="jugada__tema">«La función fática del lenguaje», con Emanuel Madrid y Diego Cartagena</p>
+              <p>Presentó las seis funciones según el elemento en el que se centra cada una y explicó la fática: la que se centra en el canal y comprueba que la comunicación sigue abierta. Sus tres momentos de contacto se ven en una llamada: «¿Aló?», «ajá» y «chao».</p>
+              <p class="jugada__enlaces"><a class="enlace-archivo" href="https://drive.google.com/file/d/1s1fslpAtYqoO2cm00VUlnPaafq-OqrKV/view" target="_blank" rel="noopener">Abrir la presentación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a></p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="matias">
+              <h4>Investigación comunicación no verbal</h4>
+              <p class="jugada__tema">Tema 9, «El saludo», en equipo con Santiago Caro</p>
+              <p>La investigación explica el saludo como un «ritual de acceso» (Goffman, 1971) que une los sistemas kinésico, háptico y proxémico (Poyatos, 1994; Hall, 1966; Knapp, 1982). En «El abuelo» analizó el saludo evasivo de Igor a Irina y el saludo lúdico de Anatoli a la niña Anya.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1hhg7ShmCFtKLnHuY-ArcMCEh9KmvoGlv/view" target="_blank" rel="noopener">Abrir la investigación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/181hAhTBbLhtwSq__RzgRy7zn5GpsK4-N/view" target="_blank" rel="noopener">Abrir el análisis de escenas<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+          </div>
+
+          <!-- RAFAEL -->
+          <div class="jugador" role="group" aria-labelledby="ev-rafael">
+            <div class="jugador__casa barro resalta" data-integrante="rafael">
+              <button class="ficha ficha--sola" type="button" data-ficha="rafael" aria-pressed="false" aria-label="Resaltar a Rafael en toda la página"><span class="ficha__disco" aria-hidden="true">RG</span></button>
+              <h3 id="ev-rafael">Rafael</h3>
+            </div>
+            <article class="jugada barro resalta" data-integrante="rafael">
+              <h4>Taller tipos de comunicación</h4>
+              <p class="jugada__tema">«Taller de comunicación asertiva», en pareja con Juan Diego Cartagena Tuberquia</p>
+              <p>Respondió el taller sobre los tipos de comunicación que usamos a diario: la pasiva, la agresiva, la pasiva-agresiva y la asertiva, con la diferencia entre ellas, un ejemplo propio de comunicación pasiva-agresiva y las características de la comunicación asertiva.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/166qo_3m4FLSjc9lwXFi4a4844tGiQoVH/view" target="_blank" rel="noopener">Abrir el taller<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="rafael">
+              <h4>Presentación funciones del lenguaje</h4>
+              <p class="jugada__tema">«Función referencial del lenguaje», con Santiago Caro Palacio y Luisa Arias Puerta</p>
+              <p>Presentó la función orientada al contexto: la que transmite información objetiva y verificable sobre la realidad externa, centrada en el referente y en los datos por encima de las opiniones personales. La ubicó en el mapa de las seis funciones de Jakobson y mostró su uso para explicar la realidad con claridad y precisión.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1ZZP9SX43NXJalFfTojkfqsoiEP3lZ9VV/view" target="_blank" rel="noopener">Abrir la presentación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="rafael">
+              <h4>Investigación comunicación no verbal</h4>
+              <p class="jugada__tema">Protocolo (tema 8), en equipo con Salomé López Estrada, más su análisis individual de dos escenas</p>
+              <p>La investigación define el protocolo como el guion social que ordena gestos, posturas, distancias, miradas y voz en los actos formales. En su entrega individual analizó dos escenas de «El abuelo»: el desayuno en el que Alla Petrovna le impone a Anya la etiqueta de la mesa —cada cubierto en su mano y la espalda recta— y Anatoli responde que «la niña está comiendo, no bailando ballet», y la solemne audiencia judicial por la custodia.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1cz0p4GKs_V3XbKC2ArAouVihzwhX2LH7/view" target="_blank" rel="noopener">Abrir la investigación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1hs0SRv10lGwqCD7xtwcpx4QHM6jGAuKF/view" target="_blank" rel="noopener">Abrir el análisis de escenas<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+          </div>
+
+          <!-- SIMÓN -->
+          <div class="jugador" role="group" aria-labelledby="ev-simon">
+            <div class="jugador__casa barro resalta" data-integrante="simon">
+              <button class="ficha ficha--sola" type="button" data-ficha="simon" aria-pressed="false" aria-label="Resaltar a Simón en toda la página"><span class="ficha__disco" aria-hidden="true">SC</span></button>
+              <h3 id="ev-simon">Simón</h3>
+            </div>
+            <article class="jugada barro resalta" data-integrante="simon">
+              <h4>Taller tipos de comunicación</h4>
+              <p class="jugada__tema">«Taller de comunicación asertiva», en pareja con David Alejandro Barrientos Bedoya</p>
+              <p>Identificó los cuatro tipos de comunicación que asumimos a diario —asertiva, agresiva, pasiva y pasiva-agresiva— y respondió las cinco preguntas del taller: la diferencia entre la agresiva y la pasiva, un ejemplo propio de comunicación pasiva-agresiva, las características de la asertiva y los estilos de cada clip del video.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1Y4uXRugLRbZ1MxYneNlTDjTBxiC3Uahp/view" target="_blank" rel="noopener">Abrir el taller<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="simon">
+              <h4>Presentación funciones del lenguaje</h4>
+              <p class="jugada__tema">«La función metalingüística», presentación en equipo; Simón estuvo a cargo de exponerla</p>
+              <p>«Cuando el lenguaje se explica a sí mismo». Repasaron el panorama de las seis funciones y explicaron la metalingüística: la que se centra en el código y aparece cuando usamos el lenguaje para definir el significado de una palabra, aclarar una regla gramatical u ortográfica o traducir un término de un código a otro.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/17mEfs1jphKQNM_z9K_nENUeCZmifSS-h/view" target="_blank" rel="noopener">Abrir la presentación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="simon">
+              <h4>Investigación comunicación no verbal</h4>
+              <p class="jugada__tema">Paralenguaje, con dos escenas de «El abuelo»</p>
+              <p>Analizó cómo la voz cambia el mensaje en dos escenas: la despedida de Irina de su hija, donde le dice que todo va a estar bien mientras le tiembla la voz y hace pausas para reprimir el llanto, y la discusión entre Igor y su prometida Yulia, donde los sarcasmos, los resoplidos y las risas irónicas contradicen lo que dicen las palabras.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1lr0fTMKgueKEwQi3HOn7hs3H8jVCp_1h/view" target="_blank" rel="noopener">Abrir el análisis de escenas<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+          </div>
+
+          <!-- TOMÁS -->
+          <div class="jugador" role="group" aria-labelledby="ev-tomas">
+            <div class="jugador__casa barro resalta" data-integrante="tomas">
+              <button class="ficha ficha--sola" type="button" data-ficha="tomas" aria-pressed="false" aria-label="Resaltar a Tomás en toda la página"><span class="ficha__disco" aria-hidden="true">TC</span></button>
+              <h3 id="ev-tomas">Tomás</h3>
+            </div>
+            <article class="jugada barro resalta" data-integrante="tomas">
+              <h4>Taller tipos de comunicación</h4>
+              <p class="jugada__tema">«Taller de comunicación asertiva», en pareja con Brayan Usme Gaviria</p>
+              <p>Respondió el taller completo: los cuatro estilos, la diferencia entre el pasivo, que prioriza la palabra de los demás, y el agresivo, que prioriza la propia por encima de todo, y un ejemplo pasivo-agresivo de la vida diaria: contestarle «no, es un fantasma mío que se levantó a responderle» a quien pregunta algo obvio. Cerró con diez características de la comunicación asertiva y la clasificación de los clips del video.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/10_Y9bifhyoqDPAdcb8W8vCp-LVPcOzHv/view" target="_blank" rel="noopener">Abrir el taller<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="tomas">
+              <h4>Presentación funciones del lenguaje</h4>
+              <p class="jugada__tema">«Función apelativa del lenguaje», con Sebastián Zuleta Echavarría y Brayan Usme Gaviria</p>
+              <p>Presentó la función centrada en el receptor, la que busca una respuesta: «las palabras tienen el poder de llamar, persuadir y transformar». Ubicó la apelativa dentro del diagrama de las seis funciones de Jakobson, junto a la referencial, la emotiva y la metalingüística, con ejemplos de orden y persuasión.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1X435QmsN3EgE5ZjRfk8aCu0L_DxHHJJP/view" target="_blank" rel="noopener">Abrir la presentación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+            <article class="jugada barro resalta" data-integrante="tomas">
+              <h4>Investigación comunicación no verbal</h4>
+              <p class="jugada__tema">Proxemia, en equipo con Emmanuel Gómez y Jerson Jesús Vega, más su análisis individual de dos escenas</p>
+              <p>La investigación estudia cómo el espacio comunica poder, afecto y jerarquía, desde las distancias de Edward T. Hall y la territorialidad cultural. En su entrega individual analizó la escena en que Irina le pide al abuelo que se haga cargo de Anya: distancia social sostenida, el escritorio como barrera, un territorio ajeno en el que ella debe pedir permiso para entrar y ausencia total de contacto.</p>
+              <p class="jugada__enlaces">
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1KW3HhsrpvMoiKPTggL_Q1m0-nGvfb4lE/view" target="_blank" rel="noopener">Abrir la investigación<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+                <a class="enlace-archivo" href="https://drive.google.com/file/d/1qcK8HeCpvxY96u4rMdnM5hbjGj5TnlFo/view" target="_blank" rel="noopener">Abrir el análisis de escenas<span class="sr"> (se abre en otra pestaña)</span><svg class="icono" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASILLA 5 · INTEGRANTES ============ -->
+    <section class="seccion" id="integrantes" data-casilla aria-labelledby="t-integrantes">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+          <h2 id="t-integrantes"><span class="sr">Casilla 5. </span>Descripción de cada integrante</h2>
+        </div>
+        <p class="consigna">Cuatro casas, un mismo equipo.</p>
+
+        <div class="casas">
+          <article class="perfil barro resalta" id="casa-matias" data-integrante="matias" aria-labelledby="perfil-matias">
+            <div class="perfil__cabeza">
+              <button class="ficha ficha--sola ficha--grande" type="button" data-ficha="matias" aria-pressed="false" aria-label="Resaltar a Matías en toda la página"><span class="ficha__disco" aria-hidden="true">MA</span></button>
+              <h3 id="perfil-matias">José Matías Agudelo Bolívar</h3>
+            </div>
+            <p>Aprendiz del Tecnólogo en Análisis y Desarrollo de Software, ficha 3406211. En la competencia se enfocó en cómo empieza y se sostiene una conversación: trabajó la función fática y el saludo como ritual de acceso. Le gusta explicar con ejemplos cotidianos, como una llamada telefónica o una escena de película.</p>
+            <p class="perfil__etiqueta">Sus casillas</p>
+            <ul class="perfil__casillas">
+              <li class="chip">Función fática</li>
+              <li class="chip">El saludo</li>
+            </ul>
+          </article>
+
+          <article class="perfil barro resalta" id="casa-rafael" data-integrante="rafael" aria-labelledby="perfil-rafael">
+            <div class="perfil__cabeza">
+              <button class="ficha ficha--sola ficha--grande" type="button" data-ficha="rafael" aria-pressed="false" aria-label="Resaltar a Rafael en toda la página"><span class="ficha__disco" aria-hidden="true">RG</span></button>
+              <h3 id="perfil-rafael">Rafael David Gaviria</h3>
+            </div>
+            <p>Aprendiz del Tecnólogo en Análisis y Desarrollo de Software, ficha 3406211. Su casilla fue la información clara: trabajó la función referencial y el protocolo, dos temas que comparten el orden y el respeto por las reglas de cada encuentro.</p>
+            <p class="perfil__etiqueta">Sus casillas</p>
+            <ul class="perfil__casillas">
+              <li class="chip">Función referencial</li>
+              <li class="chip">El protocolo</li>
+            </ul>
+          </article>
+
+          <article class="perfil barro resalta" id="casa-simon" data-integrante="simon" aria-labelledby="perfil-simon">
+            <div class="perfil__cabeza">
+              <button class="ficha ficha--sola ficha--grande" type="button" data-ficha="simon" aria-pressed="false" aria-label="Resaltar a Simón en toda la página"><span class="ficha__disco" aria-hidden="true">SC</span></button>
+              <h3 id="perfil-simon">Simón Cardona Hincapie</h3>
+            </div>
+            <p>Aprendiz del Tecnólogo en Análisis y Desarrollo de Software, ficha 3406211. Se interesó por el significado de las palabras y por la manera de decirlas: trabajó la función metalingüística y el paralenguaje.</p>
+            <p class="perfil__etiqueta">Sus casillas</p>
+            <ul class="perfil__casillas">
+              <li class="chip">Función metalingüística</li>
+              <li class="chip">El paralenguaje</li>
+            </ul>
+          </article>
+
+          <article class="perfil barro resalta" id="casa-tomas" data-integrante="tomas" aria-labelledby="perfil-tomas">
+            <div class="perfil__cabeza">
+              <button class="ficha ficha--sola ficha--grande" type="button" data-ficha="tomas" aria-pressed="false" aria-label="Resaltar a Tomás en toda la página"><span class="ficha__disco" aria-hidden="true">TC</span></button>
+              <h3 id="perfil-tomas">Tomás Cardona Hincapie</h3>
+            </div>
+            <p>Aprendiz del Tecnólogo en Análisis y Desarrollo de Software, ficha 3406211. Su casilla fue la relación con el otro: trabajó la función apelativa, la que invita a actuar, y la proxemia, que estudia las distancias entre las personas.</p>
+            <p class="perfil__etiqueta">Sus casillas</p>
+            <ul class="perfil__casillas">
+              <li class="chip">Función apelativa</li>
+              <li class="chip">La proxemia</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASILLA 6 · REFLEXIONES ============ -->
+    <section class="seccion" id="reflexiones" data-casilla aria-labelledby="t-reflexiones">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <span class="dado dado--grande" data-cara="6" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <h2 id="t-reflexiones"><span class="sr">Casilla 6. </span>Reflexión de cada aprendiz</h2>
+        </div>
+        <p class="consigna">Lo que cada uno se lleva para la vida y para el oficio.</p>
+
+        <div class="reflexiones">
+          <figure class="reflexion barro resalta" data-integrante="matias">
+            <blockquote>
+              <p>Antes pensaba que comunicarse bien era hablar bonito. Con la función fática entendí que muchas palabras no informan nada y aun así sostienen la conversación: un «¿aló?» o un «ajá» le dicen al otro que sigo ahí. Con el saludo aprendí que en dos segundos, casi sin palabras, se define si una relación empieza con confianza o con distancia. Y el taller me mostró que yo también he sido pasivo-agresivo en trabajos en grupo. Como desarrollador quiero ser el que avisa a tiempo, pregunta cuando no entiende un requisito y dice las cosas de frente, con respeto.</p>
+            </blockquote>
+            <figcaption>
+              <button class="ficha ficha--sola" type="button" data-ficha="matias" aria-pressed="false" aria-label="Resaltar a Matías en toda la página"><span class="ficha__disco" aria-hidden="true">MA</span></button>
+              <span>Matías Agudelo</span>
+            </figcaption>
+          </figure>
+
+          <figure class="reflexion barro resalta" data-integrante="rafael">
+            <blockquote>
+              <p>Lo más significativo para mí fue entender que la información clara también es una forma de respeto. Con la función referencial aprendí a separar los datos de las opiniones y a decir las cosas de manera verificable. Con el protocolo vi que las normas de un encuentro formal —una mesa, una audiencia, un saludo— existen para que todos sepan qué esperar, y que el cuerpo también las obedece. En el trimestre lo viví con la puntualidad y la argumentación que pedía cada entrega. En el desarrollo de software quiero documentar bien, dejar los acuerdos por escrito y llegar a tiempo a las reuniones con el cliente.</p>
+            </blockquote>
+            <figcaption>
+              <button class="ficha ficha--sola" type="button" data-ficha="rafael" aria-pressed="false" aria-label="Resaltar a Rafael en toda la página"><span class="ficha__disco" aria-hidden="true">RG</span></button>
+              <span>Rafael David Gaviria</span>
+            </figcaption>
+          </figure>
+
+          <figure class="reflexion barro resalta" data-integrante="simon">
+            <blockquote>
+              <p>Aprendí que muchos problemas no vienen de lo que se dice, sino de cómo se dice y de lo que cada uno entiende por una palabra. La función metalingüística me enseñó a preguntar «¿qué quieres decir con eso?» antes de suponer. El paralenguaje me lo confirmó en la película: Irina le dice a su hija que todo va a estar bien, pero la voz le tiembla y se le llena de pausas, y eso pesa más que la frase. En un proyecto quiero acordar con el cliente qué significa cada término y cuidar el tono cuando reviso el código de un compañero.</p>
+            </blockquote>
+            <figcaption>
+              <button class="ficha ficha--sola" type="button" data-ficha="simon" aria-pressed="false" aria-label="Resaltar a Simón en toda la página"><span class="ficha__disco" aria-hidden="true">SC</span></button>
+              <span>Simón Cardona Hincapie</span>
+            </figcaption>
+          </figure>
+
+          <figure class="reflexion barro resalta" data-integrante="tomas">
+            <blockquote>
+              <p>Me llevo que la manera de pedir algo cambia la respuesta que recibo: con la función apelativa vi que una orden y una petición buscan lo mismo, pero no generan lo mismo en el otro. La proxemia me enseñó a leer el espacio: en la escena del despacho, el escritorio entre Irina y el abuelo ya decía que no antes de que él hablara. Desde ahí miro distinto una reunión, una fila o un chat. Como tecnólogo quiero escribir instrucciones y mensajes que ayuden al usuario a actuar, y pedirle las cosas a mi equipo de forma clara y respetuosa.</p>
+            </blockquote>
+            <figcaption>
+              <button class="ficha ficha--sola" type="button" data-ficha="tomas" aria-pressed="false" aria-label="Resaltar a Tomás en toda la página"><span class="ficha__disco" aria-hidden="true">TC</span></button>
+              <span>Tomás Cardona Hincapie</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ META (CIELO) ============ -->
+    <section class="meta" id="meta" data-casilla aria-labelledby="t-meta">
+      <div class="contenedor meta__rejilla">
+        <div class="meta__cielo" aria-hidden="true"><span class="meta__disco">Meta</span></div>
+        <div class="meta__texto">
+          <h2 id="t-meta">Llegamos a la meta</h2>
+          <p class="consigna">En el parqués gana quien corona. Nosotros coronamos cuando aprendimos a ponernos de acuerdo.</p>
+          <p>Nos llevamos cuatro maneras de mirar un mismo mensaje y una idea compartida: un buen tecnólogo escribe código, pero también escucha, pregunta y dice las cosas con respeto. Esa es la jugada que queremos repetir en cada equipo en el que estemos.</p>
+          <a class="meta__volver" href="#inicio">Volver a la salida</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__rejilla">
+      <p><strong>Trabajo final de Comunicaciones.</strong> Competencia: «Desarrollar procesos de comunicación eficaces y efectivos, teniendo en cuenta situaciones de orden social, personal y productivo».</p>
+      <p>Tecnólogo en Análisis y Desarrollo de Software, ficha 3406211. Instructora: Kenia Nayiver López Ramírez. SENA, Centro de Servicios y Gestión Empresarial, Regional Antioquia. Septiembre de 2026.</p>
+      <p>Integrantes: José Matías Agudelo Bolívar, Rafael David Gaviria, Simón Cardona y Tomás Cardona.</p>
+    </div>
+  </footer>
+</body>
+</html>

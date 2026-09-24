@@ -1307,6 +1307,16 @@ html[data-ficha="tomas"] .mini__lector { --color: var(--azul); }
   --base: var(--blanco);
 }
 
+.estilo__alias {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--f-texto);
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.35;
+  color: var(--tinta-2);
+}
+
 .estilo__cuerpo {
   display: grid;
   gap: 0.55rem;

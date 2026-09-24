@@ -1,13 +1,16 @@
-# Trabajo final de Comunicaciones · Ficha 3406211
+# Hablar o morir · Trabajo final de Comunicaciones · Ficha 3406211
 
-Página web del trabajo final de la competencia «Desarrollar procesos de comunicación
-eficaces y efectivos, teniendo en cuenta situaciones de orden social, personal y
-productivo», del Tecnólogo en Análisis y Desarrollo de Software (SENA, Centro de
+«Hablar o morir» es el blog del equipo: la página web del trabajo final de la
+competencia «Desarrollar procesos de comunicación eficaces y efectivos, teniendo en
+cuenta situaciones de orden social, personal y productivo», del Tecnólogo en Análisis y Desarrollo de Software (SENA, Centro de
 Servicios y Gestión Empresarial, Regional Antioquia).
 
 Los seis puntos que pide la actividad son las casillas de un tablero de parqués en
 plastilina, y cada integrante es una ficha: al elegirla se resalta su casa, sus
 evidencias y su reflexión en toda la página.
+
+El nombre del blog resume la idea: en un equipo, lo que no se dice a tiempo se
+convierte en problema.
 
 - **Integrantes:** José Matías Agudelo Bolívar, Rafael David Gaviria, Simón Cardona Hincapie y Tomás Cardona Hincapie.
 - **Instructora:** Kenia Nayiver López Ramírez.
